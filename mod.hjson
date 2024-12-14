@@ -1,0 +1,8 @@
+displayName: "Turret salad"
+name: "turret-salad"
+author: "Incen"
+main: "turret-salad"
+description: "A Mindustry Java adding brand new turrets with no inspiration from other mods whatsoever."
+version: 0.1
+minGameVersion: 145
+java: true
