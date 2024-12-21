@@ -1,0 +1,69 @@
+{
+  "type": "ItemTurret",
+  "name": "Ignite",
+  "description": "Long range turret that shoots bullets that ignites and pierces through multiple targets",
+  "health": 400,
+  "range": 210,
+  "size": 1,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 2.4,
+  "inaccuracy": 2,
+  "recoil": 1.4,
+  "shootSound": "shoot",
+  "buildCostMultiplier": 0.65,
+  "consumes": {
+    "coolant": {
+      "amount": 0.07
+    }
+  },
+  "ammoTypes": {
+      "coal": {
+      "lifetime": 52.5,
+      "speed": 4,
+      "damage": 18,
+      "type": "BasicBulletType",
+      "ammoMultiplier": 2,
+      "shootEffect": "shootSmallFlame",
+      "pierce": true,
+      "pierceBuildings": true,
+      "pierceCap": 3,
+      "frontColor": "ffffff",
+      "backColor": "ffdd55",
+      "trailEffect": "burning",
+      "trailInterval": 4,
+      "width": 1,
+      "height": 1,
+      "status": "burning",
+      "statusDuration": 180
+    },
+
+     "pyratite": {
+      "lifetime": 35,
+      "speed": 6,
+      "damage": 27,
+      "type": "BasicBulletType",
+      "ammoMultiplier": 4,
+      "shootEffect": "shootSmallFlame",
+      "pierce": true,
+      "pierceBuildings": true,
+      "pierceCap": 4,
+      "frontColor": "ffffff",
+      "backColor": "ffdd55",
+      "trailEffect": "burning",
+      "trailInterval": 2,
+      "width": 1,
+      "height": 1,
+      "status": "burning",
+      "statusDuration": 480
+    },
+    
+  "requirements": [
+    {"item": "copper", "amount": 60},
+    {"item": "lead", "amount": 40},
+    {"item": "silicon", "amount": 30},
+    {"item": "titanium", "amount": 15}
+  ],
+  "category": "turret",
+  "research": "titanium"
+}
